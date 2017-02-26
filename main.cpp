@@ -65,12 +65,12 @@ bool Init()
         return false;
     }
 
-    // Create our window centered at 512x512 resolution
+    // Create our window centered at 640x480 resolution
     mainWindow = SDL_CreateWindow(programName.c_str(),
                                   SDL_WINDOWPOS_CENTERED,
                                   SDL_WINDOWPOS_CENTERED,
                                   640, 480,
-                                  SDL_WINDOW_OPENGL);
+                                  SDL_WINDOW_OPENGL | SDL_WINDOW_FULLSCREEN);
 
     // Check that everything worked out okay
     if (!mainWindow)
