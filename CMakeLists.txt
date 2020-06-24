@@ -9,11 +9,11 @@ set(SOURCE_FILES main.cpp glad.c)
 if(APPLE)
     # SDL2
     find_package(SDL2 REQUIRED)
-    include_directories(${SDL2_INCULDE_DIRS})
+    include_directories(${SDL2_INCLUDE_DIRS})
 
     # sdl2_example executable
     add_executable(sdl2_example ${SOURCE_FILES})
-    target_link_libraries(sdl2_example sdl2)
+    target_link_libraries(sdl2_example ${SDL2_LIBRARIES})
     target_link_libraries(sdl2_example "-framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo")
 else()
     # SDL2

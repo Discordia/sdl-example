@@ -7,7 +7,7 @@
 #include <iostream>
 #include "glad.h"
 #include "linmath.h"
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 std::string programName = "SDL2 - OpenGL";
 
